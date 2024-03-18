@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tfe_color_primary_dark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/icon_toolbar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_info_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_toolbar"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:text="HerbCam"/>
+    </RelativeLayout>
+
+</RelativeLayout>

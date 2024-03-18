@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tensorflow.lite.examples.detection">
+
+    <uses-sdk />
+    <!-- Tell the system this app requires OpenGL ES 3.1. -->
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="internalOnly"
+        android:label="@string/tfe_od_app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ObjectDetection">
+        <activity
+            android:name=".Desc_Klabet"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Mondokaki"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Jambumawar"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Jamblang"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Cendana"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Delima"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Malapari"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Jambubiji"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Sirih"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Jintan"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Ruku"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Mentega"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Srigading"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Kelor"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Salam"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Mangga"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Kersen"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Mint"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Melati"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Sepatu"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Bodhi"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Ficus"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Lemon"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Karendang"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Sesawi"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Lembayung"
+            android:exported="false" />
+        <activity
+            android:name=".Desc_Mimba"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Desc_Nangka"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Desc_Bayam"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Desc_Lengkuas"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".InfoAplikasi"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".ListDaun"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".FiturDeteksi"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".UploadImage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".DetectorActivity"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>

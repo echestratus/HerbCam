@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Desc_Jambubiji"
+    android:background="#D6F3C0">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/backlayout_desc_Jambubiji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/back_desc_Jambubiji"
+            style="@style/Foxandroid.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/cardview_light_background"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Deskripsi"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambarDeskripsi"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/list_jambubiji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backlayout_desc_Jambubiji" />
+
+    <LinearLayout
+        android:id="@+id/namaDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/gambarDeskripsi">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daun Jambu Biji"
+            android:textColor="@color/tfe_color_primary_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/latinDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Psidium Guajava)"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/namaDeskripsi"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/latinDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wilayah:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/latinDeskripsi"/>
+
+    <TextView
+        android:id="@+id/isiTempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seluruh wilayah di Indonesia."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tempatDeskripsi"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/isiTempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/kandunganDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kandungan:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/isiTempatDeskripsi"/>
+
+    <TextView
+        android:id="@+id/isiKandunganDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senyawa fitokimia, Serat, Asam folat, Asam kafeat."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/kandunganDeskripsi"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/isiKandunganDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/manfaatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manfaat:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/isiKandunganDeskripsi"/>
+
+    <TextView
+        android:id="@+id/manfaatDeskripsi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Menjaga kesehatan jantung."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatDeskripsi"/>
+    <TextView
+        android:id="@+id/manfaatDeskripsi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Menjaga kesehatan gigi dan gusi."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatDeskripsi1"/>
+    <TextView
+        android:id="@+id/manfaatDeskripsi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Menurunkan kadar gula darah."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatDeskripsi2"/>
+    <TextView
+        android:id="@+id/manfaatDeskripsi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Menurunkan kadar gula darah."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatDeskripsi3"/>
+    <TextView
+        android:id="@+id/manfaatDeskripsi5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Menjaga kesehatan mata."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatDeskripsi4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/manfaatDeskripsi5"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:text="(Sumber: www.kesehatan.kontan.co.id)"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Desc_Mimba"
+    android:background="#D6F3C0">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/backlayout_desc_Mimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/back_desc_Mimba"
+            style="@style/Foxandroid.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/cardview_light_background"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Deskripsi"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambarMimba"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/list_mimba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backlayout_desc_Mimba" />
+
+    <LinearLayout
+        android:id="@+id/daunMimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/gambarMimba">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daun Mimba"
+            android:textColor="@color/tfe_color_primary_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/latinMimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Azadirachta Indica)"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/daunMimba"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/latinMimba"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wilayah:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/latinMimba"/>
+
+    <TextView
+        android:id="@+id/isiTempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seluruh wilayah di Indonesia."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tempatDeskripsi"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/isiTempatDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/kandunganMimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kandungan:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/isiTempatDeskripsi"/>
+
+    <TextView
+        android:id="@+id/isiKandunganMimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hyperoside, Nimbolide, Quercetin, Quercitrin, Rutin, Azadirachtin, Nimbine."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/kandunganMimba"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/isiKandunganMimba"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#65274E08"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/manfaatMimba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manfaat:"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/isiKandunganMimba"/>
+
+    <TextView
+        android:id="@+id/manfaatMimba1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Menjaga kesehatan gigi dan gusi."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatMimba"/>
+    <TextView
+        android:id="@+id/manfaatMimba2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Mengurangi perut kembung dan diare."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatMimba1"/>
+    <TextView
+        android:id="@+id/manfaatMimba3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Meredakan peradangan dalam tubuh."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatMimba2"/>
+    <TextView
+        android:id="@+id/manfaatMimba4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Memperbaiki tekstur kulit dan anti-penuaan."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatMimba3"/>
+    <TextView
+        android:id="@+id/manfaatMimba5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Mengatasi ketombe dan rambut rontok."
+        android:textColor="@color/tfe_color_primary_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/manfaatMimba4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/manfaatMimba5"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:text="(Sumber: www.halodoc.com)"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

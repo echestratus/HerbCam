@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- android_large___1 strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="herbcam_string">HerbCam</string>
+	<string name="scan_string">Scan</string>
+	<string name="unggah_string">Unggah</string>
+	<string name="kamera_string">Kamera</string>
+</resources>
