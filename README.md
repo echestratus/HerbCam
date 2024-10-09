@@ -6,3 +6,5 @@ Features:
 -  Detect and classify herbal plant in real-time
 -  Detect and classify herbal plant from images stored in device's gallery
 -  List of herbal plant classes with its description
+
+Link to test the apk: [HerbCam](https://drive.google.com/file/d/15ES2TqMQnxZh2qt6c03FHQESEXAWzkMJ/view?usp=sharing)
